@@ -1,0 +1,45 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GuestUserActivity$PlaceholderFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/section_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:text="BACHELOR
+Degree Code	Degree Name		Duration (Years)
+BCSC 		COMPUTER SCIENCE	3
+BIT		INFORMATION TECHNOLOGY	3
+BIS		INFORMATION SCIENCES	3
+BSSE		SOFTWARE ENGEERING	4
+MASTERS
+Degree Code	Degree Name				Duration (Years)
+MMASTER OF SCIENCE IN APPLIED COMPUTING			2
+Master of Science in Computational Intelligence		2
+Master of Science in Distributed Computing Technology	2
+Master of Science in Information Technology Management	2
+Masters in Information System and Computer Science
+Master of Science in Information Technology Enabled Services	2
+PH.D
+Degree Code	Degree Name	Duration (Years)
+PHD (COMPUTER SCIENCE)	3
+POSTGRADUATE DIP. IN COMPUTER SCIENCE
+
+            "/>
+    </RelativeLayout>
+
+</ScrollView>

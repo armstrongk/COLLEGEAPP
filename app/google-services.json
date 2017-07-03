@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "735518616143",
+    "firebase_url": "https://latest-17172.firebaseio.com",
+    "project_id": "latest-17172",
+    "storage_bucket": "latest-17172.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735518616143:android:b518fee79906f68a",
+        "android_client_info": {
+          "package_name": "com.example.armstrong.college"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735518616143-of2ep1ucab45oa04184ccqf1vcpqc8eb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.armstrong.college",
+            "certificate_hash": "85eeccf943170d6e08531d8c921429f51fdc5a95"
+          }
+        },
+        {
+          "client_id": "735518616143-rqdsilam5elkvog0f2o2cbatm5sbb8r9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrQrQyf2WLDrpJmt4xtZ0WCEbpACH5g10"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735518616143-rqdsilam5elkvog0f2o2cbatm5sbb8r9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735518616143:android:7147d806bab884af",
+        "android_client_info": {
+          "package_name": "com.example.armstrong.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735518616143-rqdsilam5elkvog0f2o2cbatm5sbb8r9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrQrQyf2WLDrpJmt4xtZ0WCEbpACH5g10"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

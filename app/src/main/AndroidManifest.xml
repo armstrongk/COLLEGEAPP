@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.armstrong.college">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.example.armstrong.college.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".College"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="College"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AdminRecylerCardView" />
+        <activity android:name=".CardViewActivity" />
+        <activity android:name=".SmsActivity" />
+        <activity android:name=".GoogleStorage" />
+        <activity android:name=".RemainderActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".SendNotice" />
+        <activity android:name=".activity.AboutUsActivity" />
+        w
+        <activity android:name=".activity.PrivacyPolicyActivity" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+        <service android:name=".ScheduleService" />
+        <service android:name=".NotifyService" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".AfterLogin" />
+        <activity android:name=".StudentActivity" />
+        <activity android:name=".LecturerActivity" />
+
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".AdminDrawer" />
+        <activity android:name=".AdminCardViewActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".FragmentChat" />
+        <activity android:name=".StudentProfile" />
+        <activity android:name=".StudentRecyclerView" />
+        <activity android:name=".ReadTextFileActivity" />
+        <activity android:name=".GuestUserActivity" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SignUpActivityAdmin" />
+        <activity android:name=".LoginActivityAdmin" />
+        <activity android:name=".activity.StudentDrawer" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".ActivitySendPushNotification" />
+        <activity android:name=".MainActivityModified" />
+        <activity android:name=".activity1.MainActivity"/>
+        <activity android:name=".MainActivityNotification"/>
+
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".messenger.MessengerService"
+            android:directBootAware="true"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE"
+            tools:ignore="UnusedAttribute">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MessengerTileService"
+            android:icon="@drawable/ic_message"
+            android:label="@string/toggle_messages"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".BootReceiver"
+            android:directBootAware="true"
+            android:enabled="true"
+            tools:ignore="UnusedAttribute">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

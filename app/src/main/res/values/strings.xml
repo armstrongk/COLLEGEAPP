@@ -1,0 +1,91 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">College</string>
+    <string name="register_user">REGISTER USER</string>
+    <string name="already_registered_signin_here">already registered?? signin here</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_ur_password">enter ur password</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="FCM_PREF">com.example.armstrong.college.fcm_pref</string>
+    <string name="FCM_TOKEN">com.example.armstrong.college.fcm_token</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+
+
+    <!--notification strings-->
+
+    <string name="toggle_messages">Toggle Messages</string>
+
+    <string-array name="phrases" tools:ignore="Typos">
+        <item>I will not buy this record, it is scratched.</item>
+        <item>My hovercraft is full of eels.</item>
+        <item>Do you want to come back to my place, bouncy bouncy?</item>
+        <item>If I said you had a beautiful body, would you hold it against me?</item>
+        <item>I am no longer infected.</item>
+        <item>You have beautiful thighs.</item>
+        <item>Drop your panties, Sir William, I cannot wait till lunchtime.</item>
+        <item>Please fondle my bum.</item>
+        <item>My nipples explode with delight.</item>
+    </string-array>
+
+
+    <string name="title_activity_profile">ProfileActivity</string>
+
+
+    <string name="profile_name">student</string>
+    <string name="country_location">Uganda</string>
+    <string name="menu_profile">View Profile</string>
+    <string name="menu_chat">Send push notification</string>
+    <string name="menu_contact">send sms notification</string>
+    <string name="menu_online">Delete user</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_names">Display name</string>
+    <string name="Induce_profile_Smile">COLLEGE ASSISTANT APPLICATION</string>
+    <string name="edit_profile_name">Name</string>
+    <string name="edit_profile_country">Country</string>
+    <string name="edit_profile_phone">Phone number</string>
+    <string name="edit_profile_department">department</string>
+    <string name="select_date">Date</string>
+    <string name="save_edit">Save edit</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Profile</string>
+    <string name="nav_photos">ViewNotice</string>
+    <string name="nav_movies">ShareNotice</string>
+    <string name="nav_notifications">AddRemainder</string>
+    <string name="nav_settings">SearchNotice</string>
+    <string name="nav_about_us">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Profile</item>
+        <item>ViewNotice</item>
+        <item>ShareNotice</item>
+        <item>AddRemainder</item>
+        <item>SearchNotice</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="title_activity_basic">BasicActivity</string>
+
+    <string name="action_search">Search</string>
+    <string name="action_delete">Delete</string>
+</resources>

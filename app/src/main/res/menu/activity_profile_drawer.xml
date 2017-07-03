@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/icon"
+            android:title="Send Push Notification" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/speechbubble"
+            android:title="Send Sms Notifictaion" />
+        <item
+            android:id="@+id/nav_del"
+            android:icon="@drawable/search"
+            android:title="search notice" />
+        <item
+            android:id="@+id/nav_online"
+            android:icon="@drawable/delete"
+            android:title="Delete notice" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/settings"
+                android:title="@string/menu_settings" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+</menu>

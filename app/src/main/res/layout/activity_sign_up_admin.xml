@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/llSignUp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/editFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:drawablePadding="16dp"
+            android:hint="Name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/editLastName"
+            android:paddingBottom="16dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="16dp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/edit"/>
+
+
+        <EditText
+            android:id="@+id/editSignUpEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:drawablePadding="16dp"
+            android:textStyle="bold"
+            android:hint="Email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/editMobileNumber"
+            android:paddingBottom="16dp"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/email"/>
+
+        <EditText
+            android:id="@+id/editSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:drawablePadding="16dp"
+            android:textStyle="bold"
+            android:hint="Femail or Male"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/editMobileNumber"
+            android:paddingBottom="16dp"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/sex"/>
+        <EditText
+            android:id="@+id/editPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:drawablePadding="16dp"
+            android:hint="position"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/editPosition"
+            android:paddingBottom="16dp"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/edit"/>
+        <EditText
+            android:id="@+id/editSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:drawablePadding="16dp"
+            android:hint="part time or full time"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/editSchedule"
+            android:paddingBottom="16dp"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/edit"/>
+
+        <EditText
+            android:id="@+id/editMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:drawablePadding="16dp"
+            android:hint="Mobile Number"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:maxLength="14"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/editSignUpPassword"
+            android:textSize="15sp"
+            android:paddingBottom="16dp"
+            android:drawableLeft="@drawable/telephone"/>
+
+
+        <EditText
+            android:id="@+id/editSignUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:drawablePadding="16dp"
+            android:hint="Password"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:nextFocusForward="@+id/editSignUpConfirmPassword"
+            android:paddingBottom="16dp"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/key"/>
+
+        <EditText
+            android:id="@+id/editSignUpConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:drawablePadding="16dp"
+            android:hint="Confirm Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingBottom="16dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/key"/>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

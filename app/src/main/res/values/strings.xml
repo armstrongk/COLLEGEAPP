@@ -11,7 +11,6 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="FCM_PREF">com.example.armstrong.college.fcm_pref</string>
     <string name="FCM_TOKEN">com.example.armstrong.college.fcm_token</string>
-    <string name="title_activity_maps">Map</string>
     <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
     <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
 
@@ -34,7 +33,8 @@
 
 
     <string name="title_activity_profile">ProfileActivity</string>
-
+    <string name="home_navigation_drawer_open">Open navigation drawer</string>
+    <string name="home_navigation_drawer_close">Close navigation drawer</string>
 
     <string name="profile_name">student</string>
     <string name="country_location">Uganda</string>
@@ -54,6 +54,16 @@
     <string name="edit_profile_department">department</string>
     <string name="select_date">Date</string>
     <string name="save_edit">Save edit</string>
+
+
+
+    <!--strings for mpas activity-->
+    <string name="title_activity_maps">Map</string>
+    <string name="route_distance">Distance</string>
+    <string name="route_distance_value">40.2 Km</string>
+    <string name="route_duration">Duration</string>
+    <string name="route_duration_value">48 mins</string>
+    <string name="server_error">Server error. Something when wrong with the server</string>
 
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -88,4 +98,12 @@
 
     <string name="action_search">Search</string>
     <string name="action_delete">Delete</string>
+
+
+    <string name="facebook_app_id">312054032307399</string>
+    <string name="twitter_consumer_key">8Gy3OKQMbKJ15BH0BferBNHEj</string>
+    <string name="twitter_consumer_secret">dSUHvkbS8xCwoS6lozPAFgDtIuKhTGkRW1OYXJqxBCMgKMyDX4</string>
+    <string name="linkedin_consumer_key">7523ssry5qk7rl</string>
+    <string name="linkedin_consumer_secret">sFyJf0ZW1lp31aGU</string>
+    <string name="title_activity_share">Share</string>
 </resources>

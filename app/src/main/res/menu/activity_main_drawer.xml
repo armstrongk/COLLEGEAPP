@@ -2,10 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/user"
-            android:title="Profile" />
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/icon"
+            android:title="Register For notification" />
+
         <item
             android:id="@+id/nav_photos"
             android:icon="@drawable/view"
@@ -18,22 +20,21 @@
         <item
             android:id="@+id/nav_notifications"
             android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="AddRemainderSearch" />
+            android:title="AddRemainder" />
 
-        <item
-            android:id="@+id/nav_settings"
-            android:icon="@drawable/search"
-            android:title="SearchNotice" />
+
     </group>
 
     <item android:title="Other">
         <menu>
             <item
                 android:id="@+id/nav_about_us"
-                android:title="@string/nav_about_us" />
+                android:title="settings"
+                android:icon="@drawable/settings"/>
             <item
                 android:id="@+id/nav_privacy_policy"
-                android:title="@string/privacy_policy" />
+                android:title="Logout"
+                android:icon="@drawable/logout"/>
         </menu>
     </item>
 

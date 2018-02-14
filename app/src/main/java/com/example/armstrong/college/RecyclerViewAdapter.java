@@ -5,8 +5,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.armstrong.college.RecyclerViewHolders;
 import com.example.armstrong.college.R;
 import com.example.armstrong.college.UserProfile;
+
 import java.util.List;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolders> {
     private List<UserProfile> user;

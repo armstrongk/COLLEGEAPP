@@ -27,7 +27,7 @@
                 android:inputType="textCapWords"
                 android:maxLines="1"
                 android:nextFocusForward="@+id/editLastName"
-                android:paddingBottom="16dp"
+                android:paddingBottom="10dp"
                 android:textSize="15sp"
                 android:layout_marginLeft="16dp"
                 android:textStyle="bold"
@@ -43,7 +43,7 @@
                 android:inputType="textCapWords"
                 android:maxLines="1"
                 android:nextFocusForward="@+id/editSignUpEmail"
-                android:paddingBottom="16dp"
+                android:paddingBottom="10dp"
                 android:layout_marginRight="16dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
@@ -63,7 +63,7 @@
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:nextFocusForward="@+id/editMobileNumber"
-            android:paddingBottom="16dp"
+            android:paddingBottom="10dp"
             android:textSize="15sp"
             android:drawableLeft="@drawable/email"/>
         <EditText
@@ -79,7 +79,7 @@
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:nextFocusForward="@+id/editMobileNumber"
-            android:paddingBottom="16dp"
+            android:paddingBottom="10dp"
             android:textSize="15sp"
             android:drawableLeft="@drawable/age"/>
         <EditText
@@ -95,7 +95,7 @@
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:nextFocusForward="@+id/editMobileNumber"
-            android:paddingBottom="16dp"
+            android:paddingBottom="10dp"
             android:textSize="15sp"
             android:drawableLeft="@drawable/sex"/>
         <EditText
@@ -130,10 +130,8 @@
             android:maxLines="1"
             android:nextFocusForward="@+id/editSignUpPassword"
             android:textSize="15sp"
-            android:paddingBottom="16dp"
+            android:paddingBottom="10dp"
             android:drawableLeft="@drawable/telephone"/>
-
-
         <EditText
             android:id="@+id/editSignUpPassword"
             android:layout_width="match_parent"
@@ -148,7 +146,7 @@
             android:inputType="textPassword"
             android:maxLines="1"
             android:nextFocusForward="@+id/editSignUpConfirmPassword"
-            android:paddingBottom="16dp"
+            android:paddingBottom="10dp"
             android:textSize="15sp"
             android:drawableLeft="@drawable/key"/>
 
@@ -164,7 +162,7 @@
             android:imeOptions="actionDone"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:paddingBottom="16dp"
+            android:paddingBottom="10dp"
             android:textStyle="bold"
             android:textSize="15sp"
             android:drawableLeft="@drawable/key"/>
@@ -173,7 +171,7 @@
             android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="10dp"
             android:ems="10"
             android:text="Register"
             android:textStyle="bold"

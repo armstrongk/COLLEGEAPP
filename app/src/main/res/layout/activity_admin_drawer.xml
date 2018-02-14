@@ -9,7 +9,6 @@
     tools:openDrawer="start">
     <include
         layout="@layout/activity_app_bar_profile"
-
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     <android.support.design.widget.NavigationView
@@ -18,7 +17,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        android:scrollbars="none"
         app:headerLayout="@layout/activity_nav_header_profile"
         app:menu="@menu/activity_profile_drawer" />
 </android.support.v4.widget.DrawerLayout>

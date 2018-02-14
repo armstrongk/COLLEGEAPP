@@ -3,9 +3,7 @@ package com.example.armstrong.college.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
@@ -16,37 +14,27 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-
+import com.example.armstrong.college.EditProfileActivity;
+import com.example.armstrong.college.FireBaseMessage.AdminNoticeActivity;
+import com.example.armstrong.college.FireBaseMessage.StudentNoticeActivity;
+import com.example.armstrong.college.LoginActivity;
 import com.example.armstrong.college.MainActivityModified;
 import com.example.armstrong.college.R;
 import com.example.armstrong.college.RemainderActivity;
-import com.example.armstrong.college.fragment.ProfileFragment;
-import com.example.armstrong.college.fragment.MoviesFragment;
-import com.example.armstrong.college.fragment.NotificationsFragment;
-import com.example.armstrong.college.fragment.PhotosFragment;
+import com.example.armstrong.college.Share;
+import com.example.armstrong.college.fragment.AddRemainderFragment;
+import com.example.armstrong.college.fragment.RegisterFragment;
+import com.example.armstrong.college.fragment.ShareNoticeFragment;
+import com.example.armstrong.college.fragment.ViewNoticeFragment;
 import com.example.armstrong.college.fragment.SettingsFragment;
-import com.example.armstrong.college.other.CircleTransform;
 
 public class StudentDrawer extends AppCompatActivity {
 
     private NavigationView navigationView;
     private DrawerLayout drawer;
     private View navHeader;
-    private ImageView imgNavHeaderBg, imgProfile;
-    private TextView txtName, txtWebsite;
     private Toolbar toolbar;
-    private FloatingActionButton fab;
-
-    // urls to load navigation header background image
-    // and profile image
-    private static final String urlNavHeaderBg = "http://api.androidhive.info/images/nav-menu-header-bg.jpg";
-    private static final String urlProfileImg = "https://lh3.googleusercontent.com/eCtE_G34M9ygdkmOpYvCag1vBARCmZwnVS6rS5t4JLzJ6QgQSBquM0nuTsCpLhYbKljoyS-txg";
 
     // index to identify current nav menu item
     public static int navItemIndex = 0;
@@ -78,25 +66,13 @@ public class StudentDrawer extends AppCompatActivity {
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
-        fab = (FloatingActionButton) findViewById(R.id.fab);
+
 
         // Navigation view header
         navHeader = navigationView.getHeaderView(0);
-        txtName = (TextView) navHeader.findViewById(R.id.name);
-        txtWebsite = (TextView) navHeader.findViewById(R.id.website);
-        imgNavHeaderBg = (ImageView) navHeader.findViewById(R.id.img_header_bg);
-        imgProfile = (ImageView) navHeader.findViewById(R.id.img_profile);
-
-        // load toolbar titles from string resources
+       // load toolbar titles from string resources
         activityTitles = getResources().getStringArray(R.array.nav_item_activity_titles);
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         // load nav menu header data
         loadNavHeader();
@@ -113,30 +89,9 @@ public class StudentDrawer extends AppCompatActivity {
 
     /***
      * Load navigation menu header information
-     * like background image, profile image
-     * name, website, notifications action view (dot)
      */
     private void loadNavHeader() {
-        // name, website
-        txtName.setText("kaahwa armstrong");
-        txtWebsite.setText("www.cis.mak.ac.ug");
 
-        // loading header background image
-        Glide.with(this).load(urlNavHeaderBg)
-                .crossFade()
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .into(imgNavHeaderBg);
-
-        // Loading profile image
-        Glide.with(this).load(urlProfileImg)
-                .crossFade()
-                .thumbnail(0.5f)
-                .bitmapTransform(new CircleTransform(this))
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
-                .into(imgProfile);
-
-        // showing dot next to notifications label
-        navigationView.getMenu().getItem(3).setActionView(R.layout.menu_dot);
     }
 
     /***
@@ -156,7 +111,7 @@ public class StudentDrawer extends AppCompatActivity {
             drawer.closeDrawers();
 
             // show or hide the fab button
-            toggleFab();
+          //  toggleFab();
             return;
         }
 
@@ -183,7 +138,7 @@ public class StudentDrawer extends AppCompatActivity {
         }
 
         // show or hide the fab button
-        toggleFab();
+//        toggleFab();
 
         //Closing drawer on item click
         drawer.closeDrawers();
@@ -196,19 +151,19 @@ public class StudentDrawer extends AppCompatActivity {
         switch (navItemIndex) {
             case 0:
                 // home
-                ProfileFragment homeFragment = new ProfileFragment();
-                return homeFragment;
+              ViewNoticeFragment homeFragment = new ViewNoticeFragment();
+               return homeFragment;
             case 1:
                 // photos
-                PhotosFragment photosFragment = new PhotosFragment();
+                AddRemainderFragment photosFragment = new AddRemainderFragment();
                 return photosFragment;
             case 2:
                 // movies fragment
-                MoviesFragment moviesFragment = new MoviesFragment();
+                ShareNoticeFragment moviesFragment = new ShareNoticeFragment();
                 return moviesFragment;
             case 3:
                 // notifications fragment
-                NotificationsFragment notificationsFragment = new NotificationsFragment();
+                ViewNoticeFragment notificationsFragment = new ViewNoticeFragment();
                 return notificationsFragment;
 
             case 4:
@@ -216,7 +171,7 @@ public class StudentDrawer extends AppCompatActivity {
                 SettingsFragment settingsFragment = new SettingsFragment();
                 return settingsFragment;
             default:
-                return new ProfileFragment();
+                return new RegisterFragment();
         }
     }
 
@@ -226,6 +181,15 @@ public class StudentDrawer extends AppCompatActivity {
 
     private void selectNavMenu() {
         navigationView.getMenu().getItem(navItemIndex).setChecked(true);
+    }
+    private void shareIt() {
+//sharing implementation here
+        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+        sharingIntent.setType("text/plain");
+        String shareBody = "Here is the share content body";
+        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+        startActivity(Intent.createChooser(sharingIntent, "Share via"));
     }
 
     private void setUpNavigationView() {
@@ -241,21 +205,24 @@ public class StudentDrawer extends AppCompatActivity {
                     //Replacing the main content with ContentFragment Which is our Inbox View;
                     case R.id.home:
                         //profile
-                        navItemIndex = 0;
+                        Intent intent2 = new Intent(StudentDrawer.this, EditProfileActivity.class);
+                        startActivity(intent2);
+
+                        //navItemIndex = 0;
                         CURRENT_TAG = TAG_HOME;
                         break;
                     case R.id.nav_photos:
                         //view notice
-                        Intent intent = new Intent(StudentDrawer.this, MainActivityModified.class);
-                        startActivity(intent);
+                        Intent send=new Intent(StudentDrawer.this, StudentNoticeActivity.class);
+                       startActivity(send);
                         return true;
-                        //navItemIndex = 1;
-                       // CURRENT_TAG = TAG_PHOTOS;
-                       // break;
+
                     case R.id.nav_movies:
                         //share notice
-                        navItemIndex = 2;
-                        CURRENT_TAG = TAG_MOVIES;
+                        Intent sendNotice=new Intent(StudentDrawer.this, Share.class);
+                        startActivity(sendNotice);
+                        //navItemIndex = 2;
+                        //CURRENT_TAG = TAG_MOVIES;
                         break;
                     case R.id.nav_notifications:
                         //add remainder
@@ -268,17 +235,24 @@ public class StudentDrawer extends AppCompatActivity {
                        // break;
                     case R.id.nav_settings:
                         //search
-                        navItemIndex = 4;
-                        CURRENT_TAG = TAG_SETTINGS;
-                        break;
+                        Intent intent = new Intent(StudentDrawer.this, MainActivityModified.class);
+                        startActivity(intent);
+                        return true;
+
+                        //navItemIndex = 4;
+                        //CURRENT_TAG = TAG_SETTINGS;
+                        //break;
                     case R.id.nav_about_us:
                         // launch new intent instead of loading fragment
-                        startActivity(new Intent(StudentDrawer.this, AboutUsActivity.class));
-                        drawer.closeDrawers();
+                        //startActivity(new Intent(StudentDrawer.this, LoginActivity.class));
+                       // drawer.closeDrawers();
+
+                        Intent intentt = new Intent(StudentDrawer.this, PrivacyPolicyActivity.class);
+                        startActivity(intentt);
                         return true;
                     case R.id.nav_privacy_policy:
                         // launch new intent instead of loading fragment
-                        startActivity(new Intent(StudentDrawer.this, PrivacyPolicyActivity.class));
+                        startActivity(new Intent(StudentDrawer.this, LoginActivity.class));
                         drawer.closeDrawers();
                         return true;
                     default:
@@ -367,13 +341,13 @@ public class StudentDrawer extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
+/*
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_logout) {
             Toast.makeText(getApplicationContext(), "Logout user!", Toast.LENGTH_LONG).show();
             return true;
         }
-
+*/
         // user is in notifications fragment
         // and selected 'Mark all as Read'
         if (id == R.id.action_mark_all_read) {
@@ -389,11 +363,5 @@ public class StudentDrawer extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    // show or hide the fab
-    private void toggleFab() {
-        if (navItemIndex == 0)
-            fab.show();
-        else
-            fab.hide();
-    }
+
 }

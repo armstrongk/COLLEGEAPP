@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.armstrong.college.FireBaseMessage.SMS;
+
 public class SmsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +21,10 @@ public class SmsActivity extends Activity {
         Button startBtn = (Button) findViewById(R.id.button);
         startBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                sendSMS();
+                //sendSMS();
+
+                Intent intent=new Intent(SmsActivity.this, SMS.class);
+                startActivity(intent);
             }
         });
     }
@@ -30,7 +35,7 @@ public class SmsActivity extends Activity {
 
         smsIntent.setData(Uri.parse("smsto:"));
         smsIntent.setType("vnd.android-dir/mms-sms");
-        smsIntent.putExtra("address"  , new String ("01234"));
+        smsIntent.putExtra("address"  , new String (""));
         smsIntent.putExtra("sms_body"  , "Test ");
 
         try {

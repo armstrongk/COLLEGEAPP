@@ -25,12 +25,13 @@
         android:layout_height="wrap_content" />
 
     <!-- this button is added -->
-    <Button
+   <!-- <Button
         android:text="Send Notification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/buttonRegister"
         android:layout_centerHorizontal="true"
-        android:id="@+id/buttonSendNotification" />
+        android:id="@+id/buttonSendNotification"
+        />-->
 
 </RelativeLayout>

@@ -5,7 +5,7 @@
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/profile"
-            android:title="Profile" />
+            android:title="Edit Profile" />
         <item
             android:id="@+id/nav_chat"
             android:icon="@drawable/icon"
@@ -15,13 +15,9 @@
             android:icon="@drawable/speechbubble"
             android:title="Send Sms Notifictaion" />
         <item
-            android:id="@+id/nav_del"
-            android:icon="@drawable/search"
-            android:title="search notice" />
-        <item
             android:id="@+id/nav_online"
             android:icon="@drawable/delete"
-            android:title="Delete notice" />
+            android:title="Edit/Delete notice" />
     </group>
 
     <item android:title="Settings">

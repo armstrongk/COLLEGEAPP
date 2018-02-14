@@ -42,11 +42,11 @@ public class MainActivityModified extends AppCompatActivity implements View.OnCl
         //getting views from xml
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         buttonRegister = (Button) findViewById(R.id.buttonRegister);
-        buttonSendPush = (Button) findViewById(R.id.buttonSendNotification);
+       // buttonSendPush = (Button) findViewById(R.id.buttonSendNotification);
 
         //adding listener to view
         buttonRegister.setOnClickListener(this);
-        buttonSendPush.setOnClickListener(this);
+//        buttonSendPush.setOnClickListener(this);
     }
 
     //storing token to mysql server
@@ -104,8 +104,5 @@ public class MainActivityModified extends AppCompatActivity implements View.OnCl
         }
 
         //starting send notification activity
-        if(view == buttonSendPush){
-            startActivity(new Intent(this, ActivitySendPushNotification.class));
-        }
     }
 }

@@ -17,9 +17,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:textSize="@dimen/_16sdp"
-            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginBottom="10dp"
             android:text="BACHELOR
 Degree Code	Degree Name		Duration (Years)
 BCSC 		COMPUTER SCIENCE	3
@@ -40,6 +40,21 @@ PHD (COMPUTER SCIENCE)	3
 POSTGRADUATE DIP. IN COMPUTER SCIENCE
 
             "/>
+
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/section_label"
+            android:text="readmoredetails...."
+            android:background="@null"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
     </RelativeLayout>
+
 
 </ScrollView>

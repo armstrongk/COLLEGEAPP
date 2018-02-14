@@ -21,6 +21,16 @@ public class UserModel implements Serializable {
     private String position;
     private String course;
 
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    private String message;
+
     private String mobile_number;
 
     public String getUser_id() {

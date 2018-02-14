@@ -54,7 +54,9 @@ public class GuestUserActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main2, menu);
+       // main was deleted
+       // getMenuInflater().inflate(R.menu.menu_main2, menu);
+        //
         return true;
     }
 
@@ -89,19 +91,19 @@ public class GuestUserActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    Tab1Contacts tab1Contacts = new Tab1Contacts();
+                    CoursesTab tab1Contacts = new CoursesTab();
                     return tab1Contacts;
                 case 1:
-                    Tab2Chats tab2Chats = new Tab2Chats();
+                    DepartmentsTab tab2Chats = new DepartmentsTab();
                     return tab2Chats;
                 case 2:
-                    Tab3Online tab3Online = new Tab3Online();
+                    FeesTab tab3Online = new FeesTab();
                     return tab3Online;
                 case 3:
-                    Tab4About tab4About = new Tab4About();
+                    AboutTab tab4About = new AboutTab();
                     return tab4About;
                 case 4:
-                    Tab5Map tab5Map = new Tab5Map();
+                    MapsTab tab5Map = new MapsTab();
                     return tab5Map;
                 default:
                     return null;

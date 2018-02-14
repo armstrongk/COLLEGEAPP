@@ -12,24 +12,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/cocis" />
 
     <TextView
         android:id="@+id/section_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorBlack"
-        android:textAlignment = "textStart"
         android:linksClickable="true"
-        android:autoLink="web"
         android:orientation="vertical"
+        android:layout_marginTop="5dp"
         android:textSize="@dimen/_17sdp"
+        android:layout_marginBottom="10dp"
         android:text="Makerere University College of Computing and Information Sciences
 Address: Plot 56, Pool Road, P.O. Box 7062, Kampala, Uganda
 Telephone Number: +256392000180
@@ -61,7 +54,17 @@ Developing Staff-Training Programmes in ICT to Address Strategic Needs of IUCEA 
 CIT wins a grant under UNESCO-HP Brain Gain Initiative
 Mobile Innovation and Enterprise"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="241dp" />
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_below="@+id/section_label"
+        android:text="readmoredetails...."
+        android:background="@null"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
 </RelativeLayout>
 </ScrollView>

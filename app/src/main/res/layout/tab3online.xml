@@ -15,11 +15,11 @@
     <TextView
         android:id="@+id/section_label"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:textSize="@dimen/_16sdp"
-        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginBottom="10dp"
         android:text="Makerere University Undergraduate Fees Structure 2017 / 2018
 COLLEGE OF COMPUTING AND INFORMATICS SCIENCES (COCIS)
 Tuition fees per semester in Uganda Shillings
@@ -40,5 +40,17 @@ Evening Programmes
 
 
 "/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_below="@+id/section_label"
+        android:text="readmoredetails...."
+        android:background="@null"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
 </RelativeLayout>
 </ScrollView>

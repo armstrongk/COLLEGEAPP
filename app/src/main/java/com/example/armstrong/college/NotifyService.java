@@ -10,6 +10,8 @@ import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
+import com.example.armstrong.college.FireBaseMessage.AdminNoticeActivity;
+
 public class NotifyService extends Service {
 
     /**
@@ -63,12 +65,12 @@ public class NotifyService extends Service {
         // This is the icon to use on the notification
         int icon = R.drawable.notifiaction_icon;
         // This is the scrolling text of the notification
-        CharSequence text = "Your notification time is upon us.";
+        CharSequence text = "check your calender for a remainder.";
         // What time to show on the notification
         long time = System.currentTimeMillis();
         Notification notification = new Notification(icon, text, time);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
-        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, new Intent(this, SecondActivity.class), 0);
+        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, new Intent(this, AdminNoticeActivity.class), 0);
         notification = builder.setContentIntent(contentIntent)
                 .setSmallIcon(icon).setTicker(text).setWhen(time)
                 .setAutoCancel(true).setContentTitle(title)

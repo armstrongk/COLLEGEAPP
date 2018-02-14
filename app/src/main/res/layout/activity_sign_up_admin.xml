@@ -149,7 +149,6 @@
             android:imeOptions="actionDone"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:paddingBottom="16dp"
             android:textStyle="bold"
             android:textSize="15sp"
             android:drawableLeft="@drawable/key"/>
@@ -158,13 +157,14 @@
             android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="10dp"
             android:ems="10"
             android:text="Register"
             android:textStyle="bold"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
+
 
     </LinearLayout>
 

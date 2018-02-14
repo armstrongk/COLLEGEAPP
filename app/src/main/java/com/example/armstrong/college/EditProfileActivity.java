@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import com.example.armstrong.college.Firebase.FirebaseDatabaseHelper;
 import com.example.armstrong.college.Firebase.FirebaseUserEntity;
-import com.example.armstrong.college.Helper.Helper;
+import com.example.armstrong.college.Helpe.Helper;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 

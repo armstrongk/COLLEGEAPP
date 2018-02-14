@@ -1,0 +1,2 @@
+# COLLEGEAPP
+This android application will be beneficial to the students and reduce the manual work, enable sharing notes between lecturers and students, send notices directly to students instead posting it to notice board. With the help of this application, not only students can access the information from the remote place but also can avoid the inconvenience of travelling all the way to the institutions of learning. This system will benefit the students and help them utilize time effectively.
